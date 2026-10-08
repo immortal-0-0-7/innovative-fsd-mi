@@ -79,7 +79,7 @@ static inline float normalizeAngle(float a) {
 void updateStatusLED() {
   uint32_t color;
   if (!bmpAvailable && !bnoAvailable) {
-    color = statusLED.Color(255, 0, 0);       // red: both sensors missing
+    color = statusLED.Color(0, 0, 255);       // red: both sensors missing
   } else if (bnoAvailable && !bmpAvailable) {
     color = statusLED.Color(255, 80, 0);      // orange: bno only
   } else if (bmpAvailable && !bnoAvailable) {

@@ -1,7 +1,7 @@
 const express = require('express')
 
 const app = express()
-const ESP32 = 'http://10.139.114.244'
+const ESP32 = 'http://10.139.136.244'
 
 // Proxy /api/live → ESP32
 app.get('/api/live', async (req, res) => {
